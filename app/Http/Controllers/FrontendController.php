@@ -122,6 +122,36 @@ class FrontendController extends Controller
             'Content-Type' => 'application/pdf',
         ]);
     }
+    public function pdf_ams()
+    {
+        $fileName = 'Brosur AMS.pdf';
+
+        $path = public_path('assets/img/brosur/' . $fileName);
+
+        return Response::download($path, $fileName, [
+            'Content-Type' => 'application/pdf',
+        ]);
+    }
+    public function pdf_dms()
+    {
+        $fileName = 'Brosur DMS.pdf';
+
+        $path = public_path('assets/img/brosur/' . $fileName);
+
+        return Response::download($path, $fileName, [
+            'Content-Type' => 'application/pdf',
+        ]);
+    }
+    public function pdf_hums()
+    {
+        $fileName = 'Brosur HUMS.pdf';
+
+        $path = public_path('assets/img/brosur/' . $fileName);
+
+        return Response::download($path, $fileName, [
+            'Content-Type' => 'application/pdf',
+        ]);
+    }
     public function pdf_dokumentasi()
     {
         $fileName = 'Dokumentasi Pekerjaan.pdf';

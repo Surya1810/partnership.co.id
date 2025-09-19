@@ -70,7 +70,6 @@
             </div>
         </div>
     </section>
-    <!-- end client-->
 
     <!-- start keunggulan-->
     <section class="d-flex align-items-center justify-content-center" style="background-color: #FFFFFF; min-height: 80svh">
@@ -111,7 +110,6 @@
             </div>
         </div>
     </section>
-    <!-- end keunggulan-->
 
     <!-- end CTA-->
     {{-- <section id="aspiration" class="py-lg-5 py-4" style="background-color: #0B0B45">
@@ -157,77 +155,28 @@
                     class="fa-solid fa-arrow-right"></i></a>
         </div>
     </section>
-    <!-- end product & layanan -->
 
-    <!-- start workshop,rfid,high risk -->
-    {{-- <section class="workshop p-5">
-        <div class="container h-100">
-            <div class="row align-items-center h-100">
-                <div class="row d-flex justify-content-center text-center">
-                    <h1 class="text-white fw-600 mb-5">Apa yang baru dari Partnership</h1>
-                    <div class="col-12 col-md-4 my-3">
-                        <a href="{{ route('product.workshop') }}" class="text-decoration-none">
-                            <div class="card rounded-4 border-0 h-100 w-100">
-                                <img src="{{ asset('assets/img/workshop/workshop.jpeg') }}" alt="workshop"
-                                    class="card-img-top rounded-4">
-                                <div class="card-body rounded-4">
-                                    <h4 class="text-navy mb-3">
-                                        <strong class="fw-700">Partnership</strong>
-                                        Workshop
-                                    </h4>
-                                    <p>{!! Str::limit(strip_tags($products[0]->desc), 100) !!}</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-4 my-3">
-                        <a href="{{ route('product.securetag') }}" class="text-decoration-none">
-                            <div class="card rounded-4 border-0 h-100 w-100">
-                                <img src="{{ asset('assets/img/photo/tech/1.jpg') }}" alt="workshop"
-                                    class="card-img-top rounded-4">
-                                <div class="card-body rounded-4">
-                                    <h4 class="text-navy mb-3">
-                                        <strong class="fw-700">Partner</strong> SecureTags
-                                    </h4>
-                                    <p>RFID Document Management System</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-4 my-3">
-                        <a href="{{ route('product.building') }}" class="text-decoration-none">
-                            <div class="card rounded-4 border-0 h-100 w-100">
-                                <img src="{{ asset('assets/img/workshop/climbing.jpeg') }}" alt="workshop"
-                                    class="card-img-top rounded-4">
-                                <div class="card-body rounded-4">
-                                    <h4 class="text-navy mb-3">
-                                        <strong class="fw-700">Partnership</strong> Building Maintanance & Cleaning
-                                    </h4>
-                                    <p>{!! Str::limit(strip_tags($products[6]->desc), 100) !!}</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
+    <!-- start Brosur -->
     <section class="workshop p-5">
         <div class="container h-100">
             <div class="row align-items-center h-100">
-                <h1 class="text-white fw-600 mb-5 text-center">Brosur Kami</h1>
+                <h1 class="text-white fw-600 mb-5 text-center">Brosur</h1>
                 <div class="row d-flex justify-content-center text-center">
                     <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur BMC 1.jpg') }}" class="w-100" alt="brosure">
+                        <img src="{{ asset('assets/img/brosur/Brosur BMC 1.jpg') }}" class="w-100" alt="brosure"
+                            loading="lazy">
                     </div>
                     <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur BMC 2.jpg') }}" class="w-100" alt="brosure">
+                        <img src="{{ asset('assets/img/brosur/Brosur BMC 2.jpg') }}" class="w-100" alt="brosure"
+                            loading="lazy">
                     </div>
                     <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur BMC 3.jpg') }}" class="w-100" alt="brosure">
+                        <img src="{{ asset('assets/img/brosur/Brosur BMC 3.jpg') }}" class="w-100" alt="brosure"
+                            loading="lazy">
                     </div>
                     <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur BMC 4.jpg') }}" class="w-100" alt="brosure">
+                        <img src="{{ asset('assets/img/brosur/Brosur BMC 4.jpg') }}" class="w-100" alt="brosure"
+                            loading="lazy">
                     </div>
                     <div class="col-12 my-3">
                         <a href="{{ route('download.building') }}" class="btn btn-outline-light">Download PDF</a>
@@ -236,31 +185,113 @@
                 <div class="row d-flex justify-content-center text-center">
                     <div class="col-6 col-md-3 my-3">
                         <img src="{{ asset('assets/img/brosur/Brosur Konstruksi 1.jpg') }}" class="w-100"
-                            alt="brosure">
+                            alt="brosure" loading="lazy">
                     </div>
                     <div class="col-6 col-md-3 my-3">
                         <img src="{{ asset('assets/img/brosur/Brosur Konstruksi 2.jpg') }}" class="w-100"
-                            alt="brosure">
+                            alt="brosure" loading="lazy">
                     </div>
                     <div class="col-6 col-md-3 my-3">
                         <img src="{{ asset('assets/img/brosur/Brosur Konstruksi 3.jpg') }}" class="w-100"
-                            alt="brosure">
+                            alt="brosure" loading="lazy">
                     </div>
                     <div class="col-6 col-md-3 my-3">
                         <img src="{{ asset('assets/img/brosur/Brosur Konstruksi 4.jpg') }}" class="w-100"
-                            alt="brosure">
+                            alt="brosure" loading="lazy">
                     </div>
                     <div class="col-12 my-3">
                         <a href="{{ route('download.contractor') }}" class="btn btn-outline-light">Download PDF</a>
                     </div>
                 </div>
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-6 col-md-3 my-3">
+                        <img src="{{ asset('assets/img/brosur/Brosur AMS 1.png') }}" class="w-100" alt="brosure"
+                            loading="lazy">
+                    </div>
+                    <div class="col-6 col-md-3 my-3">
+                        <img src="{{ asset('assets/img/brosur/Brosur AMS 2.png') }}" class="w-100" alt="brosure"
+                            loading="lazy">
+                    </div>
+                    <div class="col-6 col-md-3 my-3">
+                        <img src="{{ asset('assets/img/brosur/Brosur AMS 3.png') }}" class="w-100" alt="brosure"
+                            loading="lazy">
+                    </div>
+                    <div class="col-6 col-md-3 my-3">
+                        <img src="{{ asset('assets/img/brosur/Brosur AMS 4.png') }}" class="w-100" alt="brosure"
+                            loading="lazy">
+                    </div>
+                    <div class="col-12 my-3">
+                        <a href="{{ route('download.ams') }}" class="btn btn-outline-light">Download PDF</a>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-6 col-md-3 my-3">
+                        <img src="{{ asset('assets/img/brosur/Brosur DMS 1.png') }}" class="w-100" alt="brosure"
+                            loading="lazy">
+                    </div>
+                    <div class="col-6 col-md-3 my-3">
+                        <img src="{{ asset('assets/img/brosur/Brosur DMS 2.png') }}" class="w-100" alt="brosure"
+                            loading="lazy">
+                    </div>
+                    <div class="col-6 col-md-3 my-3">
+                        <img src="{{ asset('assets/img/brosur/Brosur DMS 3.png') }}" class="w-100" alt="brosure"
+                            loading="lazy">
+                    </div>
+                    <div class="col-6 col-md-3 my-3">
+                        <img src="{{ asset('assets/img/brosur/Brosur DMS 4.png') }}" class="w-100" alt="brosure"
+                            loading="lazy">
+                    </div>
+                    <div class="col-12 my-3">
+                        <a href="{{ route('download.dms') }}" class="btn btn-outline-light">Download PDF</a>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-6 col-md-3 my-3">
+                        <img src="{{ asset('assets/img/brosur/Brosur HUMS 1.png') }}" class="w-100" alt="brosure"
+                            loading="lazy">
+                    </div>
+                    <div class="col-6 col-md-3 my-3">
+                        <img src="{{ asset('assets/img/brosur/Brosur HUMS 2.png') }}" class="w-100" alt="brosure"
+                            loading="lazy">
+                    </div>
+                    <div class="col-6 col-md-3 my-3">
+                        <img src="{{ asset('assets/img/brosur/Brosur HUMS 3.png') }}" class="w-100" alt="brosure"
+                            loading="lazy">
+                    </div>
+                    <div class="col-6 col-md-3 my-3">
+                        <img src="{{ asset('assets/img/brosur/Brosur HUMS 4.png') }}" class="w-100" alt="brosure"
+                            loading="lazy">
+                    </div>
+                    <div class="col-12 my-3">
+                        <a href="{{ route('download.hums') }}" class="btn btn-outline-light">Download PDF</a>
+                    </div>
+                </div>
+
+                <h1 class="text-white fw-600 mb-5 text-center">Video</h1>
+
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-12 col-md-4 my-3">
+                        <div class="ratio ratio-16x9 rounded shadow">
+                            <iframe src="https://www.youtube.com/embed/eu3FYB5_Z44?si=Q7rHn_oJgIRgue-x?rel=0"
+                                title="Video 1" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 my-3">
+                        <div class="ratio ratio-16x9 rounded shadow">
+                            <iframe src="https://www.youtube.com/embed/xN_vSjrfsnA?si=jar9gcLXCGlKTwaE?rel=0"
+                                title="Video 2" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 my-3">
+                        <div class="ratio ratio-16x9 rounded shadow">
+                            <iframe src="https://www.youtube.com/embed/pb3sRN4COJw?si=BtdI9Qw5L3l8UIhH?rel=0"
+                                title="Video 3" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- end workshop,rfid,high risk -->
-
-    <!-- start Project & Galeri-->
-    <!-- end Project & Galeri-->
 
     <!-- start CTA -->
     <section class="join">

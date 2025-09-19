@@ -17,4 +17,7 @@ Route::get('/rfid', [FrontendController::class, 'securetag'])->name('product.sec
 
 Route::get('/download/building', [FrontendController::class, 'pdf_building'])->name('download.building');
 Route::get('/download/contractor', [FrontendController::class, 'pdf_contractor'])->name('download.contractor');
+Route::get('/download/ams', [FrontendController::class, 'pdf_ams'])->name('download.ams');
+Route::get('/download/dms', [FrontendController::class, 'pdf_dms'])->name('download.dms');
+Route::get('/download/hums', [FrontendController::class, 'pdf_hums'])->name('download.hums');
 Route::get('/download/dokumentasi', [FrontendController::class, 'pdf_dokumentasi'])->name('download.dokumentasi');

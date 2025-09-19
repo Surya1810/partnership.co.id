@@ -193,9 +193,7 @@
         </article>
     </div>
     </section>
-    <a id="map" class="popup"
-        href="https://www.google.com/maps/search/Jl.+Cikutra+No.+171/@-6.8957498,107.6412886,17z/data=!3m1!4b1"
-        target="_Blank"></a>
+    <a id="map" class="popup" href="https://maps.app.goo.gl/jAPTEo8mxR39wJ747" target="_Blank"></a>
 
     <div class="container">
         {{-- Plakat Perbakin --}}
