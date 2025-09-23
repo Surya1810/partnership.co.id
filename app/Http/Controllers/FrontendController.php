@@ -48,29 +48,33 @@ class FrontendController extends Controller
 
     public function product_detail($id)
     {
-        // Jika id = 2, arahkan ke halaman workshop
         if ($id == 2) {
-            // Ambil produk
             $products = Product::findOrFail($id);
 
-            // Asumsikan ID produk dari 1 sampai 8 (bisa kamu ubah jika ID-nya bukan urutan)
             $minId = 1;
             $maxId = 8;
 
-            // Hitung prevId dan nextId (looping)
             $prevId = $id - 1 < $minId ? $maxId : $id - 1;
             $nextId = $id + 1 > $maxId ? $minId : $id + 1;
 
             return view('workshop.index', compact('products', 'prevId', 'nextId'));
-        } else {
-            // Ambil produk
+        }
+        if ($id == 5) {
             $products = Product::findOrFail($id);
 
-            // Asumsikan ID produk dari 1 sampai 8 (bisa kamu ubah jika ID-nya bukan urutan)
             $minId = 1;
             $maxId = 8;
 
-            // Hitung prevId dan nextId (looping)
+            $prevId = $id - 1 < $minId ? $maxId : $id - 1;
+            $nextId = $id + 1 > $maxId ? $minId : $id + 1;
+
+            return view('product.detail.technology', compact('products', 'prevId', 'nextId'));
+        } else {
+            $products = Product::findOrFail($id);
+
+            $minId = 1;
+            $maxId = 8;
+
             $prevId = $id - 1 < $minId ? $maxId : $id - 1;
             $nextId = $id + 1 > $maxId ? $minId : $id + 1;
 

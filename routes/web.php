@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\FrontendController;
-use App\Models\Client;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FrontendController::class, 'landing'])->name('landing');

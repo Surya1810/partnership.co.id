@@ -5,6 +5,33 @@
 @endsection
 
 @push('css')
+    <style>
+        .business-card {
+            border-radius: 15px;
+            background: #fff;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .business-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .stat-card {
+            background: #fff;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .counter {
+            font-size: 2.5rem;
+            letter-spacing: -1px;
+        }
+    </style>
 @endpush
 
 @section('content')
@@ -29,6 +56,7 @@
             </div>
         </div>
     </section>
+
     <!-- start client-->
     <section class="s-line-hr-top" style="background-color: #FFFFFF; height: 20svh">
         <div class="container-fluid h-100 d-none d-md-block">
@@ -72,38 +100,43 @@
     </section>
 
     <!-- start keunggulan-->
-    <section class="d-flex align-items-center justify-content-center" style="background-color: #FFFFFF; min-height: 80svh">
-        <div class="container h-100">
-            <div class="row g-3">
-                <div class="col-6 col-md-3 d-flex align-items-stretch">
-                    <div class="card border-0 shadow rounded-4 w-100 p-3" style="background-color: #0B0B45">
-                        <div class="card-body text-white">
-                            <h1 class="fs-2 fw-600">14 Tahun</h1>
-                            <small>Berdiri sejak 2010</small>
+    <section class="d-flex align-items-center justify-content-center bg-white" style="min-height: 70svh">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="card shadow-sm rounded-4 h-100 p-4 stat-card">
+                        <div class="card-body">
+                            <h1 class="fw-bold fs-2 text-primary mb-2"><span class="count" data-count="15">0</span>
+                                Tahun
+                            </h1>
+                            <small>Tahun perjalanan sejak 2010</small>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 d-flex align-items-stretch">
-                    <div class="card border-0 shadow rounded-4 w-100 p-3" style="background-color: #0B0B45">
-                        <div class="card-body text-white">
-                            <h1 class="fs-2 fw-600">7</h1>
-                            <small>Produk & Layanan untuk membantu setiap permasalahan</small>
+                <div class="col-6 col-md-3">
+                    <div class="card shadow-sm rounded-4 h-100 p-4 stat-card">
+                        <div class="card-body">
+                            <h1 class="fw-bold fs-2 text-primary mb-2"><span class="count" data-count="8">0</span>
+                            </h1>
+                            <small>Produk & layanan yang menjawab kebutuhan</small>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 d-flex align-items-stretch">
-                    <div class="card border-0 shadow rounded-4 w-100 p-3" style="background-color: #0B0B45">
-                        <div class="card-body text-white">
-                            <h1 class="fs-2 fw-600">50+</h1>
-                            <small>Client yang puas dengan kinerja kami</small>
+                <div class="col-6 col-md-3">
+                    <div class="card shadow-sm rounded-4 h-100 p-4 stat-card">
+                        <div class="card-body">
+                            <h1 class="fw-bold fs-2 text-primary mb-2"><span class="count" data-count="50">0</span>+
+                            </h1>
+                            <small>Klien yang percaya & puas dengan kami</small>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 d-flex align-items-stretch">
-                    <div class="card border-0 shadow rounded-4 w-100 p-3" style="background-color: #0B0B45">
-                        <div class="card-body text-white">
-                            <h1 class="fs-2 fw-600">450+</h1>
-                            <small>Project yang sudah kami kerjakan</small>
+                <div class="col-6 col-md-3">
+                    <div class="card shadow-sm rounded-4 h-100 p-4 stat-card">
+                        <div class="card-body">
+                            <h1 class="fw-bold fs-2 text-primary mb-2"><span class="count" data-count="450">0</span>+
+                            </h1>
+                            <small>Project yang sukses kami kerjakan</small>
                         </div>
                     </div>
                 </div>
@@ -112,21 +145,22 @@
     </section>
 
     <!-- end CTA-->
-    {{-- <section id="aspiration" class="py-lg-5 py-4" style="background-color: #0B0B45">
+    <section id="aspiration" class="py-lg-5 py-4" style="background-color: #0B0B45">
         <div class="container text-white">
-            <div class="row px-lg-5 px-3 py-3 py-sm-2">
-                <h2 class="fs-2 fw-600" style="color: #0055ff">
-                    Aspirasi </h2>
-                <h3 class="fw-light fs-1 mb-5">
-                    ”Meningkatkan kesempatan <strong class="fw-700">tumbuh</strong> berjuta insan melalui solusi
-                    finansial digital yang <strong class="fw-700">berfokus pada kehidupan</strong>” </h3>
+            <div class="row py-3 py-sm-2">
+                <h2 class="fs-2 fw-600 text-white">Komitmen Kami</h2>
+                <h3 class="fw-light fs-3 mb-4">
+                    “Kami hadir untuk memberikan <strong class="fw-bold">solusi yang tepat</strong>
+                    dan <strong class="fw-bold">menyelesaikan setiap permasalahan</strong>
+                    dengan layanan yang menyeluruh, inovatif, dan terpercaya.”
+                </h3>
             </div>
         </div>
-    </section> --}}
+    </section>
     <!-- end CTA-->
 
     <!-- start product & layanan -->
-    <section class="container_border_front">
+    <section class="container_border_front" id="product">
         <div class="container h-100 p-5">
             <div class="row align-items-center h-100">
                 <div class="col-12 text-center text-white">
@@ -137,14 +171,14 @@
     </section>
     <section class="u-line-hr-top d-flex align-items-center" style="min-height: 70svh;background-color: #fff">
         <div class="container text-center">
-            <div class="row g-3 justify-content-center">
-                @foreach ($products as $data)
-                    <div class="col-12 col-md-3">
-                        <a href="{{ route('product.detail', $data->id) }}">
-                            <div class="card shadow border-0 rounded-4">
+            <div class="row g-4">
+                @foreach ($products as $business)
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <a href="{{ route('product.detail', $business->id) }}">
+                            <div class="card business-card border-0 rounded-4">
                                 <div class="card-body">
-                                    <img src="{{ asset('assets/img/logo/dark/' . $data->logo) }}" class="w-100 my-4 px-3"
-                                        alt="{{ $data->name }}">
+                                    <img src="{{ asset('assets/img/logo/dark/' . $business->logo) }}"
+                                        class="w-100 my-4 px-3" alt="{{ $business->name }}">
                                 </div>
                             </div>
                         </a>
@@ -156,119 +190,11 @@
         </div>
     </section>
 
-    <!-- start Brosur -->
+    <!-- start Video -->
     <section class="workshop p-5">
         <div class="container h-100">
             <div class="row align-items-center h-100">
-                <h1 class="text-white fw-600 mb-5 text-center">Brosur</h1>
-                <div class="row d-flex justify-content-center text-center">
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur BMC 1.jpg') }}" class="w-100" alt="brosure"
-                            loading="lazy">
-                    </div>
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur BMC 2.jpg') }}" class="w-100" alt="brosure"
-                            loading="lazy">
-                    </div>
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur BMC 3.jpg') }}" class="w-100" alt="brosure"
-                            loading="lazy">
-                    </div>
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur BMC 4.jpg') }}" class="w-100" alt="brosure"
-                            loading="lazy">
-                    </div>
-                    <div class="col-12 my-3">
-                        <a href="{{ route('download.building') }}" class="btn btn-outline-light">Download PDF</a>
-                    </div>
-                </div>
-                <div class="row d-flex justify-content-center text-center">
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur Konstruksi 1.jpg') }}" class="w-100"
-                            alt="brosure" loading="lazy">
-                    </div>
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur Konstruksi 2.jpg') }}" class="w-100"
-                            alt="brosure" loading="lazy">
-                    </div>
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur Konstruksi 3.jpg') }}" class="w-100"
-                            alt="brosure" loading="lazy">
-                    </div>
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur Konstruksi 4.jpg') }}" class="w-100"
-                            alt="brosure" loading="lazy">
-                    </div>
-                    <div class="col-12 my-3">
-                        <a href="{{ route('download.contractor') }}" class="btn btn-outline-light">Download PDF</a>
-                    </div>
-                </div>
-                <div class="row d-flex justify-content-center text-center">
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur AMS 1.png') }}" class="w-100" alt="brosure"
-                            loading="lazy">
-                    </div>
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur AMS 2.png') }}" class="w-100" alt="brosure"
-                            loading="lazy">
-                    </div>
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur AMS 3.png') }}" class="w-100" alt="brosure"
-                            loading="lazy">
-                    </div>
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur AMS 4.png') }}" class="w-100" alt="brosure"
-                            loading="lazy">
-                    </div>
-                    <div class="col-12 my-3">
-                        <a href="{{ route('download.ams') }}" class="btn btn-outline-light">Download PDF</a>
-                    </div>
-                </div>
-                <div class="row d-flex justify-content-center text-center">
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur DMS 1.png') }}" class="w-100" alt="brosure"
-                            loading="lazy">
-                    </div>
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur DMS 2.png') }}" class="w-100" alt="brosure"
-                            loading="lazy">
-                    </div>
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur DMS 3.png') }}" class="w-100" alt="brosure"
-                            loading="lazy">
-                    </div>
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur DMS 4.png') }}" class="w-100" alt="brosure"
-                            loading="lazy">
-                    </div>
-                    <div class="col-12 my-3">
-                        <a href="{{ route('download.dms') }}" class="btn btn-outline-light">Download PDF</a>
-                    </div>
-                </div>
-                <div class="row d-flex justify-content-center text-center">
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur HUMS 1.png') }}" class="w-100" alt="brosure"
-                            loading="lazy">
-                    </div>
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur HUMS 2.png') }}" class="w-100" alt="brosure"
-                            loading="lazy">
-                    </div>
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur HUMS 3.png') }}" class="w-100" alt="brosure"
-                            loading="lazy">
-                    </div>
-                    <div class="col-6 col-md-3 my-3">
-                        <img src="{{ asset('assets/img/brosur/Brosur HUMS 4.png') }}" class="w-100" alt="brosure"
-                            loading="lazy">
-                    </div>
-                    <div class="col-12 my-3">
-                        <a href="{{ route('download.hums') }}" class="btn btn-outline-light">Download PDF</a>
-                    </div>
-                </div>
-
                 <h1 class="text-white fw-600 mb-5 text-center">Video</h1>
-
                 <div class="row d-flex justify-content-center text-center">
                     <div class="col-12 col-md-4 my-3">
                         <div class="ratio ratio-16x9 rounded shadow">
@@ -316,8 +242,44 @@
             </div>
         </div>
     </section>
-    <!-- end CTA -->
 @endsection
 
 @push('scripts')
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll('.count');
+            let started = false;
+
+            const startCountUp = () => {
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute("data-count");
+                        const count = +counter.innerText;
+                        const increment = target / 100;
+
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + increment);
+                            setTimeout(updateCount, 20);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                });
+            };
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !started) {
+                        startCountUp();
+                        started = true;
+                    }
+                });
+            }, {
+                threshold: 0.4
+            });
+
+            observer.observe(document.querySelector("#aspiration"));
+        });
+    </script>
 @endpush

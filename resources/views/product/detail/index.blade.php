@@ -21,6 +21,17 @@
         .container_border a:hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
+
+        .product-card {
+            border-radius: 15px;
+            background: #fff;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
     </style>
 @endpush
 
@@ -296,17 +307,27 @@
             </a>
         </section>
 
-
-
         <!-- Judul -->
         <section class="s-line-hr-top" style="min-height: 100svh;background-color: #fff">
-            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
-                <div class="col-md-5 p-lg-5 mx-auto my-5">
-                    <p class="lead fw-normal">{{ $products->desc }}</p>
-                </div>
-            </div>
-
             <div class="container py-3 marketing">
+                <div class="text-center mb-5">
+                    <p class="lead text-muted">
+                        {{ $products->desc }}
+                    </p>
+                </div>
+
+                <div class="row justify-content-center mb-3">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card h-100 border-0">
+                            <a href="#" class="text-decoration-none text-black" data-bs-toggle="modal"
+                                data-bs-target="#brosurConstruction">
+                                <img src="{{ asset('assets/img/brosur/Brosur Konstruksi 1.jpg') }}"
+                                    class="card-img-top img-fluid w-100 object-fit-cover" alt="Construction"
+                                    loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <!-- START THE FEATURETTES -->
                 <div class="row featurette align-items-center">
                     <div class="col-md-7">
@@ -547,6 +568,18 @@
                 </div>
             </div>
         </section>
+
+        <div class="modal fade" id="brosurConstruction" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content border-0 shadow-lg">
+                    <div class="modal-body p-0">
+                        <iframe src="{{ asset('assets/img/brosur/Brosur Konstruksi.pdf') }}" width="100%"
+                            height="800px" style="border:0;">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     @elseif ($products->id === 4)
         <!-- Judul -->
         <section class="container_border position-relative">
@@ -1239,18 +1272,24 @@
 
         <!-- Judul -->
         <section class="s-line-hr-top" style="min-height: 100svh;background-color: #fff">
-            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
-                <div class="col-md-5 p-lg-5 mx-auto my-5">
-                    <p class="lead fw-normal">Partnership Building Maintenance & Cleaning menawarkan layanan pembersihan
-                        dan
-                        pemeliharaan gedung yang menyeluruh, dari pembersihan rutin hingga perawatan preventif. Dengan tim
-                        profesional dan solusi yang disesuaikan, kami memastikan gedung Anda selalu bersih, terawat, dan
-                        dalam
-                        kondisi optimal.</p>
-                </div>
-            </div>
-
             <div class="container py-3 marketing">
+                <div class="text-center mb-5">
+                    <p class="lead text-muted">
+                        {{ $products->desc }}
+                    </p>
+                </div>
+
+                <div class="row justify-content-center mb-3">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card h-100 border-0">
+                            <a href="#" class="text-decoration-none text-black" data-bs-toggle="modal"
+                                data-bs-target="#brosurBMC">
+                                <img src="{{ asset('assets/img/brosur/Brosur BMC 1.jpg') }}"
+                                    class="card-img-top img-fluid w-100 object-fit-cover" alt="BMC" loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <!-- START THE FEATURETTES -->
                 <div class="row featurette align-items-center">
                     <div class="col-md-7">
@@ -1321,6 +1360,18 @@
                 </div>
             </div>
         </section>
+
+        <div class="modal fade" id="brosurBMC" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content border-0 shadow-lg">
+                    <div class="modal-body p-0">
+                        <iframe src="{{ asset('assets/img/brosur/Brosur BMC.pdf') }}" width="100%" height="800px"
+                            style="border:0;">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     @endif
 @endsection
 
