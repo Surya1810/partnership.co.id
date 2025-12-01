@@ -94,7 +94,7 @@
 
         #map {
             display: block;
-            background: url(/assets/img/workshop/map_2.png) no-repeat center center;
+            background: url(/assets/img/workshop/map_new.png) no-repeat center center;
             background-size: cover;
             width: 100%;
             padding-top: 85%;
